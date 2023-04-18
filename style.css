@@ -1,0 +1,182 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    margin:20px;
+    padding: 0;
+    background-color: blanchedalmond;
+}
+
+#root{
+}
+
+.block {
+    /* letter-spacing: 1px; */
+    display: flex;
+    font-weight: 700;
+    margin: 5px;
+    align-items: center;
+
+}
+
+.first_div{
+}
+.first_inp{
+    text-align: center;
+    height: 20px;
+
+}
+
+.first{
+    display: block;
+    min-width: 150px;
+    max-width: 220px;
+}
+
+.second{
+    display: none;
+    min-width: 150px;
+    max-width: 220px;
+}
+
+.first_first{
+    display: none;
+}
+
+.second_second{
+    display: block;
+    width: 150px;
+    color:rgb(5, 101, 12);
+}
+
+
+.btn{
+    margin-right:10px ; 
+    color: rgb(96, 96, 24);
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid rgb(206, 155, 104);
+    transition: .3s;
+    
+}
+
+.btn_change{
+    background-color: green;
+    color: white;
+}
+.btn:hover{
+    transform: scale(1.1);
+    transition: .3s;
+}
+
+
+.block_input {
+    margin: 10px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+.first_input {
+    margin-bottom: 5px;
+}
+.second_input {
+    margin-bottom: 5px;
+}
+.btn_input {
+    margin-top: 5px;
+    width: 150px;
+    background-color: rgb(40, 218, 40);
+    border: 2px solid green;
+    color: white;
+    cursor: pointer;
+}
+
+.clear{
+    margin-left: 10px;
+    background-color: transparent;
+    color: red;
+    border: none;
+    font-weight: 800;
+    cursor: pointer;
+    transition: .3s;
+
+}
+
+.clear:hover{
+    transform: scale(1.2);
+    transition: .3s;
+}
+
+.out_input{
+    color: red;
+}
+
+@media screen and (max-width: 510px) {
+    .block{
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        padding-bottom: 100px ;
+    }
+    .block_input {
+    width: 100%;
+    }
+    .btn_input{
+width: 100%;
+padding: 5px;
+    }
+
+    .first_input {
+        padding: 5px;
+        width: 100%;
+    }
+    .second_input {
+        width: 100%;
+        padding: 5px;
+
+    }
+
+
+
+
+    .first_div{
+        padding-left: 10px;
+        font-size: 32px;
+
+    }
+    .second{
+        font-size: 32px;
+        
+    }
+    .btn{
+        margin: 0px 30px 0px 30px ;
+        padding: 10px;
+        position: absolute;
+        top: 45px;
+        left: -20px;
+        font-size: 13px;
+        font-weight: 700 ;
+
+   
+
+    }
+    .input_input{
+        width: 100%;
+        margin: 10px 10px;
+        position: absolute;
+        top: 80px;
+        left: 0px;
+        padding: 5px;
+    }
+    .clear{
+        font-size: 30px;
+        position: absolute;
+        left: 340px;
+        top: 35px;
+
+    }
+}
